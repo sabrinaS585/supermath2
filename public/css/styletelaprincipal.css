@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: #120284;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row; /* forma de linha */
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px; /* inicio espaço */
+}
+
+.cabecalho-imagem {
+    height: 72px; 
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: "Sarala", sans-serif; 
+    color: #eaeaf4;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #f6f1ed;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #47c2ff;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #47c2ff;
+}
+
+.button {
+    background-color: #47c2ff;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: "Sarala", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+}
+
+.button:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: "Sarala", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #e8e2de;
+}
+
+.rodape {
+    padding: 15px;
+    border-top: 0.4px solid #e4e3e2;
+}
+
+.rodape-texto {
+    display: block;
+    margin: 0 auto;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #47c2ff;
+    text-align: center;
+}
+
+.galaxy-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000066; /* Azul escuro */
+    z-index: -1;
+    overflow: hidden; /* Garante que as estrelas brilhantes não apareçam fora do contêiner */
+}
+
+.galaxy-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Imagem de estrelas */
+    opacity: 0.9; /* Ajuste a opacidade conforme desejado */
+    pointer-events: none;
+    animation: twinkling ease infinite; /* Adiciona a animação de brilho */
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .conteudo-principal-imagem {
+        height: 350px;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 48px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal-escrito-titulo {
+        font-size: 36px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .cabecalho-menu {
+        gap: 16px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-principal-escrito-titulo {
+        font-size: 28px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .conteudo-principal-imagem {
+        height: 200px;
+    }
+}
+
+
+
+
+.cabecalho-div{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; 
+    padding-right: 50px;
+
+}
+
+
+
+
+
+.mensagem-usuario {
+    font-family: "Sarala", sans-serif; /* Fonte usada para o texto */
+    font-weight: 400; /* Peso da fonte */
+    margin-right: 30px;
+    color: #eaeaf4; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    max-width: 350px; /* Largura máxima do elemento */
+}
+
+
+
+

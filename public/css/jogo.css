@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body{
+    font-size: 100%;
+    background: #120284;
+    
+    
+    
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;/* forma de linha*/
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+.cabecalho-imagem{
+    height: 72px; 
+ }
+ .cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+.cabecalho-menu-item{
+    font-family: "Sarala", sans-serif; 
+    color:#eaeaf4;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #f6f1ed;
+    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+    
+    
+}
+
+.conteudo-principal-escrito-titulo{
+font-family: "Righteous", cursive;
+font-weight: 400;
+font-size: 60px;
+color: #47c2ff;
+
+}
+.quiz {
+    text-align: center;
+}
+
+.question {/*operação*/
+    margin-bottom: 10px;
+    font-size: 80px;
+    color: #f6f1ed;
+    font-family: "Righteous", cursive;
+
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    
+}
+
+.option {
+    margin: 0 10px;/*entre os botoes*/
+    background-color: white; /* Botões brancos */
+    color: black; /* Texto preto */
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: "Righteous", cursive;
+
+}
+
+
+.option:hover,
+.option:focus {
+    background-color:rgba(236,214, 196, 0.53);
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+.botao-verificar {
+    background-color: white; 
+    color: black; /* Texto preto */
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Righteous", cursive;
+    border-radius: 5px;
+    margin-bottom: 1pc;
+    transition: background-color 0.3s ease;
+}
+.botao-verificar:hover,
+.botao-verificar:focus {
+    background-color:rgba(236,214, 196, 0.53);
+    transform: scale(1.1); /* Efeito de zoom */
+}
+
+.pontuacao{
+    color: #f0f0f0;
+    font-family: "Righteous", cursive;
+    font-weight: 200;
+    font-size: 50px;
+    text-align: center;
+}
+.buttonvoltar {
+    background-color: #47c2ff;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    
+
+}
+
+.buttonvoltar:hover {
+    background-color:rgba(236,214, 196, 0.53);
+}
+
+
+
+.conteudo-principal-imagem{
+    height: 430px;
+    
+   
+}
+.rodape{
+    padding: 15px;
+    border-top: 0.4px solid #e4e3e2;
+}
+.rodape-texto{
+    
+    display: block;
+    margin: 0 auto;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#47c2ff;
+    text-align: center;
+}
+
+.galaxy-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000066; /* Azul escuro */
+    z-index: -1;
+    overflow: hidden; /* Garante que as estrelas brilhantes não apareçam fora do contêiner */
+}
+
+.galaxy-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Imagem de estrelas */
+    opacity: 0.9; /* Ajuste a opacidade conforme desejado */
+    pointer-events: none;
+    animation: twinkling  ease infinite; /* Adiciona a animação de brilho */
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilo do botão */
+.botao-desempenho {
+    background-color: #47c2ff; /* Cor de fundo azul */
+    color: white; /* Cor do texto */
+    font-family: "Sarala", sans-serif;
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixar o texto em negrito */
+    padding: 12px 24px; /* Espaciamento interno (topo e fundo, direita e esquerda) */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+    text-align: center; /* Alinha o texto no centro */
+    display: inline-block; /* Permite que o link tenha o comportamento de um botão */
+    transition: all 0.3s ease; /* Transição suave para hover e foco */
+    text-decoration: none; /* Remover o sublinhado do link */
+}
+
+/* Efeito ao passar o mouse (hover) */
+.botao-desempenho:hover {
+    background-color: rgba(71, 194, 255, 0.8); /* Azul mais claro */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte para dar destaque */
+}
+
+/* Efeito ao clicar (active) */
+.botao-desempenho:active {
+    transform: translateY(0); /* Retorna à posição original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+/* Foco no botão */
+.botao-desempenho:focus {
+    outline: none; /* Remove o contorno padrão de foco */
+    border: 2px solid #eaeaf4; /* Cor de borda quando focado */
+    box-shadow: 0 0 4px rgba(71, 194, 255, 0.8); /* Sombra de foco */
+}
+
+
+
+
+

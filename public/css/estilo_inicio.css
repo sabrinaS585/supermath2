@@ -1,0 +1,130 @@
+/* Centralização do conteúdo */
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 16px;
+}
+
+.conteudo-centralizado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #ffffff1a; /* Fundo translúcido */
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.conteudo-principal-escrito-titulo {
+    font-family: "Righteous", cursive;
+    font-size: 36px;
+    color: #47c2ff;
+    margin-bottom: 16px;
+}
+
+/* Formulário */
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Labels */
+label {
+    font-family: "Sarala", sans-serif;
+    font-size: 18px;
+    color: #e8e2de;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input de texto */
+.input-text {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #47c2ff;
+    border-radius: 8px;
+    font-family: "Sarala", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #eaeaf4;
+    box-shadow: 0 0 4px rgba(71, 194, 255, 0.8);
+}
+
+/* Mensagens de erro */
+.mensagem-erro {
+    color: #ff4c4c;
+    font-family: "Sarala", sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Botão */
+.button {
+    background: linear-gradient(90deg, #47c2ff, #3a9ed9);
+    color: #ffffff;
+    font-family: "Sarala", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #3a9ed9, #47c2ff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de Voltar */
+.voltar-button {
+    background-color: #ff4c4c;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Sarala", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.voltar-button:hover {
+    background-color: rgba(255, 76, 76, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.voltar-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

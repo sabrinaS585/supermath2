@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body{
+    font-size: 100%;
+    background: #120284;
+    
+    
+    
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;/* forma de linha*/
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+.cabecalho-imagem{
+    height: 72px; 
+ }
+ .cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+.cabecalho-menu-item{
+    font-family: "Sarala", sans-serif; 
+    color:#eaeaf4;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid #f6f1ed;
+    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+    
+    
+}
+.conteudo-principal-escrito-titulo{
+font-family: "Righteous", cursive;
+font-weight: 400;
+font-size: 60px;
+color: #47c2ff;
+
+}
+.buttonvoltar {
+    background-color: #47c2ff;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.buttonvoltar:hover {
+    background-color:rgba(236,214, 196, 0.53);
+}
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    
+  }
+
+  .button {
+    display:block; 
+    background-color: #47c2ff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 150px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: -40px; /* posiçao do botão */
+   
+  }
+
+  .button:hover {
+    background-color:rgba(236,214, 196, 0.53)
+  }
+  
+.conteudo-principal-imagem{
+    height: 430px;
+    
+   
+}
+.rodape{
+    padding: 15px;
+    border-top: 0.4px solid #e4e3e2;
+}
+.rodape-texto{
+    
+    display: block;
+    margin: 0 auto;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#47c2ff;
+    text-align: center;
+}
+
+.galaxy-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000066; /* Azul escuro */
+    z-index: -1;
+    overflow: hidden; /* Garante que as estrelas brilhantes não apareçam fora do contêiner */
+}
+
+.galaxy-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Imagem de estrelas */
+    opacity: 0.9; /* Ajuste a opacidade conforme desejado */
+    pointer-events: none;
+    animation: twinkling  ease infinite; /* Adiciona a animação de brilho */
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}

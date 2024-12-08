@@ -1,0 +1,64 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(116, 174, 251);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #cf4901;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+        
+        p {
+            text-align: justify;
+            color: #000000;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        h5{
+            font-size: 20px;
+        }
+        h6{
+            font-size: 20px;
+        }
+
+        
+
+        /* Estilo para o conteúdo principal */
+        main {
+            margin: 50px;
+            padding: 50px;
+            background-color: #fff;
+            border: 1px solid #dfdfdf;
+
+        }
+
+        .buttonvoltar {
+            background-color: #47c2ff;
+            color: #000000;
+            border: none;
+            border-radius: 50%;
+            width: 60px; /* Ajuste o tamanho do botão conforme necessário */
+            height: 60px; /* Ajuste o tamanho do botão conforme necessário */
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 60px; /* Ajuste a altura da linha conforme necessário */
+            display: inline-block; /* Garante que o tamanho do botão se ajuste ao conteúdo */
+            text-decoration: none; /* Remove o sublinhado padrão */
+        }
+        
+        .buttonvoltar:hover {
+            background-color: rgba(236, 214, 196, 0.53);
+        }
+        
